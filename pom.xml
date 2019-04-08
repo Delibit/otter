@@ -11,7 +11,7 @@
 	<name>otter</name>
 	<version>4.2.18-SNAPSHOT</version>
 	<inceptionYear>2011</inceptionYear>
-	<url>http://github.com/alibaba/otter</url>
+	<url>http://github.com/Delibit/otter</url>
 	<organization>
 		<name>alibaba</name>
 		<url>http://www.alibaba.com</url>
@@ -46,9 +46,9 @@
 	</licenses>
 
 	<scm>
-    <url>git@github.com:alibaba/otter.git</url>
-    <connection>scm:git:git@github.com:alibaba/otter.git</connection>
-    <developerConnection>scm:git:git@github.com:alibaba/otter.git</developerConnection>
+    <url>git@github.com:Delibit/otter.git</url>
+    <connection>scm:git:git@github.com:Delibit/otter.git</connection>
+    <developerConnection>scm:git:git@github.com:Delibit/otter.git</developerConnection>
 	</scm>
 
 	<repositories>
@@ -112,8 +112,8 @@
         <maven.test.skip>true</maven.test.skip>
         <downloadSources>true</downloadSources>
         <!-- compiler settings properties -->
-        <java_source_version>1.6</java_source_version>
-        <java_target_version>1.6</java_target_version>
+        <java_source_version>1.8</java_source_version>
+        <java_target_version>1.8</java_target_version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<file_encoding>UTF-8</file_encoding>
 		<spring-version>3.1.2.RELEASE</spring-version>
@@ -347,6 +347,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.0</version>
 				<configuration>
 					<source>${java_source_version}</source>
 					<target>${java_target_version}</target>
